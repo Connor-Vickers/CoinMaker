@@ -1,3 +1,3 @@
 import XTest
 
-Suite(groups: SampleSpec()).run()
+Suite(groups: CoinSpec()).run()

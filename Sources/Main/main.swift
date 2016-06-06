@@ -1,3 +1,3 @@
 import Core
 
-print(Sample.greeting())
+///print(Sample.greeting())
