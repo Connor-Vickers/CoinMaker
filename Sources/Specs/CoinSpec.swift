@@ -10,5 +10,11 @@ class CoinSpec: Group {
 		let change = CoinMaker.getChange(amount: 1)
 		assert.that(change["pennies"]!, equals: 1, message: "1 cents gives 1 penny")
 	}
+	let sixCentTest = Test { assert in 
+		let change = CoinMaker.getChange(amount: 6)
+		assert.that(change["pennies"]!, equals: 1, message: "6 cents gives 1 penny")	
+		assert.that(change["nickels"]!, equals: 1, message: "6 cents gives 1 nickle")
+	}
+
 
 }
